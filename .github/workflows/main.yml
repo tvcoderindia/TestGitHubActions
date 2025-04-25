@@ -22,4 +22,4 @@ jobs:
               fetch-depth: 0
               ref: main
               token: ${{ secrets.GITHUB_TOKEN }}
-              repository: tvcoderindia/TestGitHubActions
+              repository: tvcoderindia/TestGitHubActions2
