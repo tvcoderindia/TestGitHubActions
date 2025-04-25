@@ -1,0 +1,17 @@
+name: Build-Workflow
+
+permissions:
+  id-token: write
+  contents: write
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: [self-hosted-windows-runner]
+    steps:
+      - name: Chekout Code
+        uses: actions/checkout@v4
+        with:
+              fetch-depth: 0
