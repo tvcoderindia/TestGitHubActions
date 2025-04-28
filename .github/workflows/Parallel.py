@@ -8,7 +8,6 @@ on:
   push:
 
 jobs:
-
   get-runner:
     if: ${{ always() }}
     runs-on: [windows-latest]
@@ -18,7 +17,7 @@ jobs:
       - name: Set Runner
         run: echo "selected runner = ${{ runner.name }}"
 
-       - name: Set Environment Variable
+      - name: Set Environment Variable
         run: |
               $a = "abc"
               echo "$a=A_VARIABLE" >> $GITHUB_ENV
